@@ -14,30 +14,36 @@ public class PlayerMovement : MonoBehaviour {
 		if (Input.GetKey (KeyCode.W)) {
 			
 			//move object, frame independent
-			transform.position += new Vector3 (0, 0, 8) * Time.deltaTime;
+			transform.position += new Vector3 (0, 0, 7) * Time.deltaTime;
 
 			//rotate object to face the way its moving
-			//transform.eulerAngles = new Vector3 (0, 0, 0); 
+			transform.eulerAngles = new Vector3 (0, 0, 0); 
 		}
 
 		if (Input.GetKey (KeyCode.S)) {
 			
 			//move object, frame independent
-			transform.position += new Vector3 (0, 0, -8) * Time.deltaTime;
+			transform.position += new Vector3 (0, 0, -7) * Time.deltaTime;
+
+			transform.eulerAngles = new Vector3 (0, 180, 0); 
 
 		}
 
 		if (Input.GetKey (KeyCode.A)) {
 
 			//move object, frame independent
-			transform.position += new Vector3 (-8, 0, 0) * Time.deltaTime;
+			transform.position += new Vector3 (-7, 0, 0) * Time.deltaTime;
+
+			transform.eulerAngles = new Vector3 (0, 270, 0); 
 
 		}
 
 		if (Input.GetKey (KeyCode.D)) {
 
 			//move object, frame independent
-			transform.position += new Vector3 (8, 0, 0) * Time.deltaTime;
+			transform.position += new Vector3 (7, 0, 0) * Time.deltaTime;
+
+			transform.eulerAngles = new Vector3 (0, 90, 0); 
 
 		}
 
