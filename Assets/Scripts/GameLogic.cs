@@ -49,7 +49,7 @@ public class GameLogic : MonoBehaviour {
 
 		if ((hint3.position - player.position).magnitude < 3f) {
 
-			textbox.text = "A Tree! You pee on it. You smell a bone in the distance. Northwest.";
+			textbox.text = "A Tree! You pee on it. \nYou smell something in the distance. Northwest.";
 
 		}
 
